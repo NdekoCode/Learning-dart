@@ -1,14 +1,13 @@
-void main(){
-
+void main() {
   // Une map est un objet donc on a des clé qui correspondent à des valeurs (CFR les Objet JSON en Javascript)
   // Syntaxe Map<TypeOFKey,TypeOfValue> NameOFmap = Value or {}(default value)
-  Map <String, dynamic> students = {
-    "Cedric Vb":15.5,
-    "Chadrack":15,
-    "Arick":17,
-    "Cedric":14,
-    "Benjamin":13.5,
-    "Dawala":11
+  Map<String, dynamic> students = {
+    "Cedric Vb": 15.5,
+    "Chadrack": 15,
+    "Arick": 17,
+    "Cedric": 14,
+    "Benjamin": 13.5,
+    "Dawala": 11
   };
   print(students);
   // Ajouter un nouvelle entrer
@@ -19,7 +18,7 @@ void main(){
   students.remove("Gloire");
   print(students);
   // Vide un map
-  students.clear();
-  
-
+  // students.clear();
+  // Syntax: forEach((value,indexOfTableOrMap))
+  // students.forEach((student, note) => print("$student a obtenus $note/20"));
 }
